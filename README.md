@@ -7,18 +7,18 @@ The project was completed as part of a Responsible AI and AI Governance learning
 
 ## Why this matters 
 Credit Scoring System are considered to have a high impact on AI application because their decision can highly influence  in access to loan and financial opportunities.
-While the machine learning model may get accurate prediction but the does'nt mean there accuaracy in demographic groups, outcomes across these groups can still vary.Hence Fairness evaluation is important part of Responsible Ai and for model risk management.
+While the machine learning model may get accurate prediction but the doesn't mean their accuracy in demographic groups, outcomes across these groups can still vary.Hence Fairness evaluation is important part of Responsible AI and for model risk management.
 
 ## Dataset
  Here we are using german credit dataset from OpenML, 
- this dataset includes customer demography and financial information such as:Credit history,Loan duration,Savings status,Employment information,Housing information,Age,Existing credits.
+ this dataset includes customer demographic and financial information such as:Credit history,Loan duration,Savings status,Employment information,Housing information,Age,Existing credits.
 
 ## Machine Learning Model
  A Logistic Regression classifier was used as the baseline model.
  Logistic Regression is commonly used for binary classification problems and is considered relatively interpretable compared to more complex machine learning models. This makes it suitable for auditing and governance-focused analysis.   The model was trained to predict whether a customer represented a good or bad credit risk.
 
 ## Sensitive Attribute
-So, Fairness analysis is done using the age as the sensitive attribute here. We have kept a condition here which is Under 25 years old and 25 years old and above, the main idea behind this project is to determine if the model gave different outcome for the age group. Age was selected as the sensitive attribute because age-related disparities are commonly examined in fairness research and financial decision-making systems.
+So, Fairness analysis is done using the age as the sensitive attribute here. We have kept a condition here which is Under 25 years old and 25 years old and above, the main idea behind this project is to determine if the model gives different outcome for the age group. Age was selected as the sensitive attribute because age-related disparities are commonly examined in fairness research and financial decision-making systems.
 
 ## Fairness Evaluation
  Fairness was measured using Demographic Parity Difference.This metric compares positive prediction rates across demographic groups.A value closer to 0 indicates more equitable treatment across groups, while larger values indicate greater disparity.
